@@ -1874,44 +1874,7 @@ const Header = () => {
                   </svg>
                 </span>
               </a>
-              <ul className="menulist-cate">
-                <li className="cate-item  active ">
-                  <a href="/" title="Trang chủ">
-                    {' '}
-                    Trang chủ{' '}
-                  </a>
-                </li>
-                <li className="cate-item ">
-                  <a href="/pages/gioi-thieu" title="Giới thiệu">
-                    {' '}
-                    Giới thiệu{' '}
-                  </a>
-                </li>
-                <li className="cate-item ">
-                  <a href="/collections/all" title="Sản phẩm">
-                    {' '}
-                    Sản phẩm{' '}
-                  </a>
-                </li>
-                <li className="cate-item ">
-                  <a href="/blogs/tat-ca-bai-viet" title="Bài viết">
-                    {' '}
-                    Bài viết{' '}
-                  </a>
-                </li>
-                <li className="cate-item ">
-                  <a href="/pages/lien-he" title="Liên hệ">
-                    {' '}
-                    Liên hệ{' '}
-                  </a>
-                </li>
-                <li className="cate-item ">
-                  <a href="/pages/osifood-tuyen-dung" title="Tuyển dụng">
-                    {' '}
-                    Tuyển dụng{' '}
-                  </a>
-                </li>
-              </ul>
+              <MenuList />
             </div>
           </div>
         </div>
