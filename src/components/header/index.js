@@ -1,4 +1,5 @@
 import MenuList from '../menuList';
+import { useSelector, useDispatch } from 'react-redux';
 const Header = () => {
   return (
     <div className="mainHeader--height">
@@ -1665,7 +1666,9 @@ const Header = () => {
                             </svg>
                           </span>
                           <span className="count-holder">
-                            <span className="count">0</span>
+                            <span className="count">
+                              {useSelector((state) => state.cart.length)}
+                            </span>
                           </span>
                         </span>
                         <span className="box-text">

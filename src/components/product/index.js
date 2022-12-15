@@ -1,6 +1,9 @@
 /* eslint-disable react/prop-types */
+import { useSelector, useDispatch } from 'react-redux';
+import { addToCart } from '../../redux/action';
 const Product = (props) => {
-  const { imageMedium, imageLarge, title, price, href } = props;
+  const { imageMedium, imageLarge, title, price, href, id } = props;
+  const dispatch = useDispatch();
   return (
     <div
       className="col-md-2 col-sm-4 col-xs-4 product-loop  "
@@ -61,7 +64,7 @@ const Product = (props) => {
                 <button
                   type="button"
                   className="button btn-proloop-cart add-to-cart  "
-                  onClick="HRT.All.addCartProdItem('1088089427')"
+                  onClick={() => dispatch(addToCart(id))}
                   title="Thêm vào giỏ"
                 >
                   <span className="btnico">

@@ -1,6 +1,7 @@
 import Product from '../../components/product';
 const Products = [
   {
+    id: 1,
     imageMedium:
       '//product.hstatic.net/200000459373/product/tai_xuong__9__e20bf99465594802829fb0178e95d85d_medium.jpg',
     imageLarge:
@@ -10,6 +11,7 @@ const Products = [
     href: '/products/ca-hu-tuoi-song-bv-500g',
   },
   {
+    id: 2,
     imageMedium:
       '//product.hstatic.net/200000459373/product/untitled_design__5__f8e03b03d3e84f33858dd2058851d090_medium.jpg',
     imageLarge:
@@ -19,6 +21,7 @@ const Products = [
     href: '/products/canh-bi-thittxay-300g-300-canh',
   },
   {
+    id: 3,
     imageMedium:
       '//product.hstatic.net/200000459373/product/untitled_design__4__a60e0a1d092d45ec8536d6f1d7e36973_medium.jpg',
     imageLarge:
@@ -28,6 +31,7 @@ const Products = [
     href: '/products/canh-bi-do-tron-do-tron-thit',
   },
   {
+    id: 4,
     imageMedium:
       '//product.hstatic.net/200000459373/product/untitled_design__3__96ad1587d67b4504b64caef1f4fd7750_medium.jpg',
     imageLarge:
@@ -37,6 +41,7 @@ const Products = [
     href: '/products/canh-bi-tron-tron-300g-300-canh',
   },
   {
+    id: 5,
     imageMedium:
       '//product.hstatic.net/200000459373/product/untitled_design__14__e585692a9ac945c1b0b8e17baa4a99d1_medium.jpg',
     imageLarge:
@@ -146,6 +151,7 @@ const Home = () => {
                 {Products.map((product, key) => (
                   <Product
                     key={key}
+                    id={product.id}
                     imageMedium={product.imageMedium}
                     imageLarge={product.imageLarge}
                     title={product.title}

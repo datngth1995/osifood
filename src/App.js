@@ -9,10 +9,12 @@ import Product from './pages/product';
 import Note from './pages/note';
 import Contact from './pages/contact';
 import Career from './pages/career';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 function App() {
   return (
-    <div>
+    <Provider store={store}>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -25,7 +27,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
-    </div>
+    </Provider>
   );
 }
 
